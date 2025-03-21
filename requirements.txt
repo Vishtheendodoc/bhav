@@ -2,7 +2,5 @@ pandas
 numpy
 requests
 streamlit
-sqlite3
 matplotlib
 plotly
-datetime
