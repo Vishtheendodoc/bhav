@@ -5,20 +5,7 @@ import requests
 import os
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
-import telegram
 import matplotlib.dates as mdates
-# Telegram Alert Setup
-TELEGRAM_BOT_TOKEN = "YOUR_BOT_TOKEN"
-TELEGRAM_CHAT_ID = "YOUR_CHAT_ID"
-bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
-
-def send_telegram_alert(message):
-    try:
-        bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=message)
-    except Exception as e:
-        st.error(f"Error sending Telegram alert: {e}")
-        print(f"Error sending Telegram alert: {e}")
-
 # Database setup
 db_path = "bhavcopy_data.db"
 
